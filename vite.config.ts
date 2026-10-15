@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
-  base: process.env.BASE_URL || './',
+  base: '/kasa-ledger/',
   plugins: [
     react(),
     VitePWA({
@@ -17,8 +17,8 @@ export default defineConfig({
         orientation: 'portrait',
         background_color: '#09090B',
         theme_color: '#09090B',
-        start_url: './',
-        scope: './',
+        start_url: '/kasa-ledger/',
+        scope: '/kasa-ledger/',
         icons: [
           {
             src: 'favicon.svg',
